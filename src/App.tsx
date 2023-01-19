@@ -52,7 +52,7 @@ function App() {
   }
 
   const newGame = () => {
-    const newWord = getRandomWord ();
+    const newWord = getRandomWord();
     setWord(newWord);
     setHiddenWord('_ '.repeat(newWord.length));
     setAttempts(0);
@@ -83,7 +83,7 @@ function App() {
 
       {
         letters.map((letter) => (
-          <button
+          <button className={'letters'}
             onClick={() => checkLetter(letter)}
             key={letter}>
             {letter}</button>
@@ -91,8 +91,7 @@ function App() {
       }
 
       <br /><br />
-      <button onClick={newGame}>¿Nuevo juego?</button>
-
+        <button className={'button'} onClick={newGame}>¿Nuevo juego?</button>
     </div>
   )
 }
