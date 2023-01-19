@@ -73,7 +73,7 @@ function App() {
 
       {
         (lose)
-          ? <h2>Perdió {word}</h2> : ''
+          ? <h2>¡Perdió! la palabra es {word}</h2> : ''
       }
 
       {
