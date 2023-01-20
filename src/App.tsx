@@ -74,12 +74,12 @@ function App() {
 
       {
         (lose)
-          ? <h2>¡Perdió! la palabra es {word}</h2> : ''
+          ? <h2>¡Perdió! La palabra es: {word}</h2> : ''
       }
 
       {
         (won)
-          ? <h2>Felicidades usted ganó {word}</h2> : ''
+          ? <h2>¡Ganó! La palabra es: {word}</h2> : ''
       }
 
       {
