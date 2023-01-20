@@ -12,15 +12,16 @@ function App() {
   const [lose, setLose] = useState(false);
   const [won, setWon] = useState(false);
 
-
+//Determinar si la persona perdió
   useEffect(() => {
     if (attempts >= 9) {
       setLose(true);
     }
   }, [attempts]);
-
+  
+//Determinar si la persona ganó
   useEffect(() => {
-    const currentHiddenWord = hiddenWord.split('').join('');
+    const currentHiddenWord = hiddenWord.split(' ').join('');
     if (currentHiddenWord === word) {
       setWon(true);
     }
